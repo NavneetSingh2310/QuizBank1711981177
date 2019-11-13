@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>JS</title>
+  <title>JS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">E-Cart Project</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="signup.html" id="name" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="login.html" id="logout"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+<br><br><br>
+
+  <body onload="getSessionProducts(),getStoredProducts(),getCartProducts()">
+    <div id="Show" style="float:right; margin-right:15px;">
+    </div>
+    <h2 style="margin-left: 46%; margin-right: 50%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-decoration: underline;"> Products </h2>
+    <div id="showListProducts" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-left: 20%;">
+    </div>
+
+    <button  class="btn btn-default" role="button" onclick="back()" style="margin-left: 80%;">👈Back</button>
+    <button class="btn btn-default" role="button" onclick="next()" >Next👉</button>  
+  
+    <br><br>
+    <button class="btn btn-success" role="button" id="CheckOut"  style="inline-size: 200px; margin-left: 44%; margin-right: 50%; margin-bottom: 3%;" onclick="check()">Submit Test</button>
+  
+  </body>
+    <script src="viewProd.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  
+    </html>
